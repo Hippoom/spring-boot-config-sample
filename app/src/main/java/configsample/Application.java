@@ -18,7 +18,7 @@ public class Application {
 
     @RequestMapping
     public String hello() {
-        return new ST("hello, I'm <hostName>, you can call me <nickName>")
+        return new ST("Welcome to <hostName>, you can call me <nickName>")
                 .add("hostName", host.getName())
                 .add("nickName", host.getNickName())
                 .render();
